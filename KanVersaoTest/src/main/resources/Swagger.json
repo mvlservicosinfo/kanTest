@@ -1,0 +1,94 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "Cadastro de Beneficiarios de Plano de Saude (1.0.0)",
+    "description": "API de Cadrasto de Beneficiario.",
+    "version": "1.0.0"
+  },
+  "host": "http://localhost:8080/api",
+  "schemes": [
+    "https://localhost:8080/api"
+  ],
+  "paths": {
+    "/users": {
+      "post": {
+        "summary": "Cadastrar um beneficiário junto com seus documentos",
+        "description": "Cadastrar um beneficiário com seus respectivos documentos",
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "host": "http://localhost:8080/api/localizartodos",
+      "schemes": [
+        "https://localhost:8080/api/localizartodos"
+      ],
+      "get": {
+        "summary": "Localizar todos beneficiarios",
+        "description": "EndpointLocalizar Todos os Beneficiários",
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "host": "http://localhost:8080/api/localizaporid/id",
+      "schemes": [
+        "https://localhost:8080/api/localizaporid/id"
+      ],
+      "get": {
+        "summary": "Localizar beneficiarios por id",
+        "description": "Endpoint Localizar por ID",
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "host": "http://localhost:8080/api/atualizarporid/id",
+      "schemes": [
+        "https://localhost:8080/api/atualizarporid/id"
+      ],
+      "put": {
+        "summary": "Atualizar beneficiarios por id",
+        "description": "Endpoint Atualizar por ID",
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "host": "http://localhost:8080/api/apagarporid/id",
+      "schemes": [
+        "https://localhost:8080/api/apagarporid/id"
+      ],
+      "delete": {
+        "summary": "Apagar beneficiarios por id",
+        "description": "Endpoint Apagar por ID",
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    }
+  }
+}
+
+
